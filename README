@@ -7,6 +7,11 @@ The main models to check and test are text-davinci-003 and code-davinci-002.
 Out of these two, code-davinci-002 appears to have a slight edge (be slightly better in its outputs)
 however, I have often ran into the problem of it being overwhelmed with requests and therefore 
 unaccessible. 
+UPDATE (March 24): The code models (code-davinci-002 and code-cushman-001) seem to be 
+"out of comission" (I get a model code-davinci-002 or model code-cushman-001 does not exist"
+when querried, although these were working yesterday (with the mention from above). 
+Accordingly, I took them out of our options. We will wait and see! 
+
 
 The main goal of the project is to train this models on own (Blueprint) datas \
 and to access the answers for these trained models. 
@@ -21,6 +26,8 @@ pickle5
 tiktoken
 pandas
 numpy 
+
+
 
 After cloning, at the main directory (which contains the app.py) simply run:
 flask run. 

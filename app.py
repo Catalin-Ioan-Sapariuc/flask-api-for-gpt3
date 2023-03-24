@@ -5,7 +5,8 @@ from add_specific_train_data_to_query import enrich_query
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-MODELS = ["text-davinci-003", "text-curie-001", "text-davinci-002","code-davinci-002","code-cushman-001"]
+MODELS = ["text-davinci-003", "text-curie-001", "text-davinci-002"]
+# "code-davinci-002","code-cushman-001"]
 
 #RECENT_MODELS = ["gpt-3.5-turbo","gpt-3.5-turbo-0301","gpt-4-0314"]
 TEMPERATURES =["0.","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1."]
