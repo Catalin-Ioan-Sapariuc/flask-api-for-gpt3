@@ -1,9 +1,27 @@
-This is an ai which follows the youtube tutorial from here: 
-https://www.youtube.com/watch?v=dVLtyuffF7M&lc=Ugwv4-H526AGd8__M9x4AaABAg.9kcUBJgSgrH9kcUXJ2NRW8
-Steps:
--- install the required packages listed in requirements.txt
--- to run the app: 
-0. cd frontend: cp .env.example .env
-1. cd backend: python3 main.py 
-2. cd frontend: npm run start:dev
-3. open localhost:8080/prompt and enjoy . 
+This is a flask APP which is a wrapper around the GPT3 models. 
+Note that the "older" models (text-curie-001 and code-cushman-001) are more limited and accept 
+only aproximately 2000 tokens for the entire completion. 
+These have been added here in order to make a fuller image and for convenience. 
+
+The main models to check and test are text-davinci-003 and code-davinci-002. 
+Out of these two, code-davinci-002 appears to have a slight edge (be slightly better in its outputs)
+however, I have often ran into the problem of it being overwhelmed with requests and therefore 
+unaccessible. 
+
+The main goal of the project is to train this models on own (Blueprint) datas \
+and to access the answers for these trained models. 
+For this particular flask wrapper, the answers are conveniently accessed straight trough the 
+web page. 
+
+To run the app: 
+Have installed:
+openai (+v.0.26)
+flask 
+pickle5
+tiktoken
+pandas
+numpy 
+
+After cloning, at the main directory (which contains the app.py) simply run:
+flask run. 
+Enjoy! 
